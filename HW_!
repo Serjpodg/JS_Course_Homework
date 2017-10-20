@@ -1,0 +1,47 @@
+
+//Task 1
+var str = "Have a good day!"
+console.log(str);
+
+//Task 2
+var age = 25;
+console.log(age);
+var age = undefined;
+
+//Task 3
+var info = {name: "Serj", age: 30};
+console.log(info.name);
+console.log(info.age);
+var name = info.name;
+console.log(name);
+delete info.name;
+console.log(name); //уже разобрались почему все равно выводится значение
+
+//Task 4
+var customArray = [13,17,19];
+console.log(customArray);
+customArray = 0;
+console.log(customArray);
+
+//Task 5
+var student = name;
+console.log(student);
+student = `Podgaevskiy ${name}`;
+console.log(student);
+
+//task 6
+var complex = [];
+complex[0] = `My name is ${name}`;
+complex[1] = 7;
+complex[2] = null;
+complex[3] = info;
+console.log (complex [2]);
+
+//task 7
+var complexObj = {};
+complexObj.name = name;
+complexObj.age = info.age;
+complexObj.friends = ["Have", "No", "Friends"];
+complexObj.soc_links = {facebook: "Fb", google: "G+"};
+var otpt = `My name is ${complexObj.name}. I am ${complexObj.age} yrs old. I have a lot of friends, but speaking frankly I ${complexObj.friends[0],complexObj.friends[1],complexObj.friends[2]}, You can find me on facebook: ${complexObj.soc_links.facebook} or on google groups: ${complexObj.soc_links.google}`;
+console.log(otpt);
