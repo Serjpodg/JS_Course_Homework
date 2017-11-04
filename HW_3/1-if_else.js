@@ -52,4 +52,30 @@ console.log(result); */
 
 //Task 5
 var a = +prompt("enter a");
+a === 2 || a === 0 ? console.log(a/10) : console.log(a+7);
+
+//Task 6
+var a = +prompt("enter a");
 var b = +prompt("enter b");
+a <== 1 && b >== 3 ? console.log(a+b) : console.log("НЕверно!");
+
+//Task 7
+var a = +prompt("enter a");
+var b = +prompt("enter b");
+11 > == a >== 2 || 14 > b >== 6 ? console.log(a+2) : console.log(a+5);
+
+//Task 8
+var num = +prompt("enter num");
+switch(num) {
+    case 1:  var result = "Winter";
+        break;
+    case 2: result = "Spring";
+        break;
+    case 3:  var result = "Summer";
+        break;
+    case 4: result = "Autumn";
+        break;
+    default: result = "Wrong";
+        break;
+}
+console.log(result);
