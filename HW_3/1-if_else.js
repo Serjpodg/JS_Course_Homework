@@ -79,3 +79,58 @@ switch(num) {
         break;
 }
 console.log(result);
+
+//Task 9
+//9.1
+var lang = prompt ("Enter lang");
+var arr = [];
+if (lang === "ru") {
+    arr = ["пн", "вт", "ср", "чт", "пт", "сб", "вс"];
+} else if (lang === "en") {
+    arr = ["Mon", "Tue", "Wed", "Thu", "Sat", "Sun"];
+} else if (lang === "de") {
+    arr = ["Mon", "Die", "Mit", "Don", "Fre", "Sam", "Son"];
+} else {
+    console.log ("Error lang");
+};
+console.log (arr);
+
+//9.2
+var lang = prompt ("Enter lang");
+var arr = [];
+switch (lang) {
+    case "ru":
+        arr = ["пн", "вт", "ср", "чт", "пт", "сб", "вс"];
+        break;
+    case "en":
+        arr = ["Mon", "Tue", "Wed", "Thu", "Sat", "Sun"];
+        break;
+    case "de":
+        arr = ["Mon", "Die", "Mit", "Don", "Fre", "Sam", "Son"];
+        break;
+    default:
+        console.log ("Error lang");
+};
+console.log(arr);
+
+//9.3
+var lang = prompt ("Enter lang");
+var arr = [];
+arr = [
+    ["пн", "вт", "ср", "чт", "пт", "сб", "вс"],
+    ["Mon", "Tue", "Wed", "Thu", "Sat", "Sun"],
+    ["Mon", "Die", "Mit", "Don", "Fre", "Sam", "Son"]
+];
+switch (lang) {
+    case "ru":
+        console.log(arr[0]);
+        break;
+    case "en":
+        console.log(arr[1]);
+        break;
+    case "de":
+        console.log(arr[2]);
+        break;
+    default:
+        console.log("Error lang");
+};
