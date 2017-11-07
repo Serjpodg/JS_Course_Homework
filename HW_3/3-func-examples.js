@@ -1,9 +1,8 @@
-1
+//1
 
 var name = "Vasya";
 function getData(age) {
-  
-  return {
+    return {
     name: name,
     age: age
   };
@@ -12,8 +11,9 @@ function getData(age) {
 var newData = getData(20);
 var newDataElse = getData();
 
-console.log(newData, newDataElse); // ?
-2
+console.log(newData, newDataElse); // name: "Vasya", age: 20 , name: "Vasya", age: undefined
+
+//2
 
 function canGoToManGym(name, age, gender) {
   if (!name) {
@@ -36,9 +36,10 @@ function canGoToManGym(name, age, gender) {
   return normalAge && isMan;
 }
 
-canGoToManGym("Lily", 24, "woman"); // ?
-canGoToManGym("Vasya", 30, "man"); // ?
-3
+canGoToManGym("Lily", 24, "woman"); // false
+canGoToManGym("Vasya", 30, "man"); // false
+
+//3
 
 Use Parameter Defaults:
 
