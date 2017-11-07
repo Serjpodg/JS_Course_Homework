@@ -41,7 +41,7 @@ canGoToManGym("Vasya", 30, "man"); // false
 
 //3
 
-Use Parameter Defaults:
+//Use Parameter Defaults:
 
 function getName( name ) {
   name = name || "Default name";
@@ -49,11 +49,13 @@ function getName( name ) {
   return name;  
 }
 
-getName("Lily"); // ?
-getName(); // ?
-4
+getName("Lily"); // Lily
+getName(); // Default name
 
-Example of recurtion in function, when it returns itself on some condition& Example how can we use isNaN function and how to write functions, that check all of the possibility of errors in it:
+
+//4
+
+//Example of recurtion in function, when it returns itself on some condition& Example how can we use isNaN function and how to write functions, that check all of the possibility of errors in it:
 
 function getNumberInRange( rangeStart, rangeEnd, number) {
   // check if some of our arguments is not a number return the new call of this function
